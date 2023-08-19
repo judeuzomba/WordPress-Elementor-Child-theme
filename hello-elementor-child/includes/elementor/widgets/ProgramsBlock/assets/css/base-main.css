@@ -1,0 +1,210 @@
+.zen-programs {
+    max-width: 1374px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zen-programs__dot-text {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s all ease;
+    text-align: center;
+    user-select: none !important;
+    text-transform: lowercase;
+    line-height: 30px;
+}
+
+.zen-programs .gallery-thumbs {
+    padding: 0 40px;
+}
+
+.zen-programs .gallery-thumbs .swiper-slide {
+    padding: 0 30px 6px;
+}
+
+.zen-programs .gallery-thumbs .swiper-slide.swiper-slide-thumb-active .zen-programs__dot-text {
+    color: #B99E79 !important;
+}
+
+.zen-programs .gallery-thumbs {
+    margin-bottom: 70px;
+}
+
+.zen-programs .swiper-button {
+    top: 50% !important;
+    transform: translate(0, -50%);
+    z-index: 12;
+    width: 60px !important;
+    height: 60px !important;
+    border: 1px solid #eae2d7;
+    color: #B99E79 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    background: none !important;
+    margin: 0 !important;
+}
+
+.zen-programs {
+    position: relative;
+}
+
+.zen-programs .swiper-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.402' height='19.284' viewBox='0 0 10.402 19.284'%3E%3Cg id='Page-1' transform='translate(0.407 18.931) rotate(-90)'%3E%3Cg id='Page-1-2' data-name='Page-1' transform='translate(18.577 0) rotate(90)'%3E%3Cg id='Core' transform='translate(0)'%3E%3Cg id='chevron-right'%3E%3Cpath id='Shape' d='M3.174,0l6.65,9.289h0l-.052.072-6.6,9.216,9.289-9.289Z' transform='translate(-3.174)' fill='%23d1bea0' stroke='%23d1bea0' stroke-width='1' fill-rule='evenodd'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.zen-programs .swiper-button-prev:before {
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.zen-programs__content {
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zen-programs__content > * {
+    width: 100%;
+    max-width: 50%;
+}
+
+.zen-programs__content-img {
+    margin-left: auto;
+    position: relative;
+    max-width: 535px;
+}
+
+.zen-programs__content-img:after {
+    content: '';
+    display: block;
+    padding-top: 139%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.zen-programs .swiper-button-next {
+    left: calc(100% + 20px);
+    right: auto;
+}
+
+.zen-programs .swiper-button-prev {
+    right: calc(100% + 20px);
+    left: auto;
+}
+
+@media (max-width: 1024px) {
+    .zen-programs .swiper-button-next {
+        left: auto;
+        right: 0;
+    }
+
+    .zen-programs .swiper-button-prev {
+        right: auto;
+        left: 0;
+    }
+
+    .zen-programs .gallery-thumbs {
+        width: calc(100% - 140px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .zen-programs__dot-text {
+        font-size: 14px !important;
+    }
+
+    .zen-programs .gallery-thumbs .swiper-slide {
+        padding: 0 15px 6px;
+    }
+}
+
+.zen-programs .swiper-wrapper {
+    align-items: center !important;
+}
+
+@media (max-width: 768px) {
+    .zen-programs .swiper-button-next {
+        left: auto;
+        right: 0;
+    }
+
+    .zen-programs .swiper-button-prev {
+        right: auto;
+        left: 0;
+    }
+
+    .zen-programs .gallery-thumbs {
+        width: calc(100% - 100px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .zen-programs__dot-text {
+        font-size: 14px !important;
+        line-height: 22px;
+    }
+
+    .zen-programs .swiper-button {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .zen-programs .swiper-button:before {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .zen-programs .gallery-thumbs {
+        padding: 0;
+    }
+}
+
+
+.gallery-thumbs-wrapper {
+    position: relative;
+}
+
+.zen-programs__content-title {
+    display: block;
+    margin-bottom: 55px;
+}
+
+.zen-programs__content-text {
+    margin-bottom: 100px;
+}
+
+.zen-programs__btn {
+    min-width: 185px;
+    background-color: #B99E79;
+    border: 1px solid #B99E79;
+    color: #fff;
+    display: inline-block !important;
+    transition: 0.3s all ease;
+    text-align: center;
+    padding: 10px 36px;
+    line-height: 1;
+}
+
+.zen-programs__btn:hover {
+    background-color: #fff;
+    color: #B99E79;
+}
+
+.zen-programs .gallery-main .swiper-wrapper {
+    align-items: flex-start !important;
+}

@@ -1,0 +1,58 @@
+.zen-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(2, 1, 1, 0);
+    border: 1px solid #B99E79;
+    /*padding: 8px 70px;*/
+    width: 615px;
+    /*max-width: 615px;*/
+    color: #B99E79;
+    text-align: center;
+    transition: 0.3s all ease;
+    height: 120px;
+    padding: 0 55px;
+}
+
+.zen-btn__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .zen-btn {
+        /*padding: 0 50px;*/
+    }
+}
+
+.zen-btn:hover {
+    background-color: #B99E79 !important;
+    color: #fff !important;
+}
+
+.zen-btn__icon {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(0, -50%);
+    width: 38px;
+    height: 38px;
+}
+
+.zen-btn__icon path {
+    fill: #B99E79;
+    transition: 0.3s all ease;
+}
+
+.zen-btn:hover .zen-btn__icon path {
+    fill: #fff;
+}
+
+.zen-btn_icon-right .zen-btn__icon {
+    transform: translate(0, -50%) rotate(180deg);
+    left: auto;
+    right: 18px;
+}

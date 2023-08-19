@@ -1,0 +1,7 @@
+#tribe-events-content .elementor-element .elementor-button {
+    color: #ffffff;
+    transition: color 400ms ease;
+}
+#tribe-events-content .elementor-element .elementor-button:hover {
+    color: #B99F7A;
+}

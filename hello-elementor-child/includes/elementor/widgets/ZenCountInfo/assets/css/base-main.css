@@ -1,0 +1,82 @@
+.zen-count-list__item {
+    width: 100%;
+    text-align: center;
+}
+
+.zen-count-list__item-inner {
+    padding: 80px 0;
+    position: relative;
+}
+
+.zen-count-list__item-line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: #B99F7A;
+}
+
+.zen-count-list__item-line:before,
+.zen-count-list__item-line:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    background-color: #B99F7A;
+}
+
+.zen-count-list__item-line:before {
+    left: 0;
+}
+
+.zen-count-list__item-line:after {
+    right: 0;
+}
+
+.zen-count-list__item-line_top:before,
+.zen-count-list__item-line_top:after {
+    top: 0;
+}
+
+.zen-count-list__item-line_bottom:before,
+.zen-count-list__item-line_bottom:after {
+    bottom: 0;
+}
+
+.zen-count-list__item-line_top {
+    top: 0;
+}
+
+.zen-count-list__item-line_bottom {
+    bottom: 0;
+}
+
+.zen-count-list__item-number {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 36px;
+    display: block;
+    color: #B99F7A;
+}
+
+.zen-count-list__item-text {
+    font-size: 20px;
+    color: #0D0D0D;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .zen-count-list__item {
+        padding: 0 15px;
+    }
+
+    .zen-count-list__item-number {
+        font-size: 32px;
+    }
+
+    .zen-count-list__item-text {
+        font-size: 18px;
+    }
+
+}

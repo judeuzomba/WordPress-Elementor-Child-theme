@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "GillSans", Sans-serif;
+    src: url('GillSansProCyrillic-LightItalic.eot');
+    src: url('GillSansProCyrillic-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('GillSansProCyrillic-LightItalic.woff2') format('woff2'),
+        url('GillSansProCyrillic-LightItalic.woff') format('woff'),
+        url('GillSansProCyrillic-LightItalic.ttf') format('truetype'),
+        url('GillSansProCyrillic-LightItalic.svg#GillSansProCyrillic-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

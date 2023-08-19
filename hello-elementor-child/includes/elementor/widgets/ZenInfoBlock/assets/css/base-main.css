@@ -1,0 +1,124 @@
+.zen-info-block__item {
+    width: 100%;
+}
+
+.zen-info-block__item-inner {
+    position: relative;
+    min-height: 740px;
+}
+
+/*@media (max-width: 992px) {*/
+/*    .zen-info-block__item-inner {*/
+/*        min-height: 520px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 576px) {*/
+/*    .zen-info-block__item-inner {*/
+/*        min-height: 400px;*/
+/*    }*/
+/*}*/
+
+
+.zen-info-block__item-content,
+.zen-info-block__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.zen-info-block__item-img {
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.zen-info-block__item-content {
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+}
+
+.zen-info-block__item-content-text {
+    width: 100%;
+    position: relative;
+    padding: 40px 70px 55px;
+    text-align: center;
+    color: #fff;
+}
+
+.zen-info-block__item-content-text:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.zen-info-block__item-title {
+    font-size: 24px;
+    display: block;
+    line-height: 32px;
+}
+
+.zen-info-block__item-content-text > * {
+    z-index: 2;
+    position: relative;
+}
+
+/*.zen-info-block__item-button {*/
+/*    color: #fff;*/
+/*    border: 1px solid #fff;*/
+/*    padding: 8px 50px;*/
+/*    font-weight: 300;*/
+/*    transition: 0.3s all ease;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.zen-info-block__item-button:hover {*/
+/*    color: #fff;*/
+/*    opacity: 0.8;*/
+/*}*/
+
+.zen-info-block__item-toggle {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    margin-bottom: 80px;
+}
+
+.zen-info-block__item-toggle-text {
+    transition: 0.5s all ease;
+    opacity: 0;
+    padding: 0 15px;
+}
+
+.zen-info-block__item-toggle_active .zen-info-block__item-toggle-text {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .zen-info-block__item-title {
+        font-size: 20px;
+    }
+
+    .zen-info-block__item-toggle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .zen-info-block__item {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .zen-info-block__item:last-child {
+        margin-bottom: 0;
+    }
+}
